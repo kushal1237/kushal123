@@ -25,7 +25,7 @@
   // Typed words in the tagline
   var word = document.getElementById('word');
   if(!reduce){
-    var list = ['engineering','AI','robotics','creative technology'], w = 0, c = 0, del = false;
+    var list = ['web development','programming','creative projects','engineering'], w = 0, c = 0, del = false;
     (function tick(){
       var cur = list[w];
       word.textContent = cur.slice(0, c);
@@ -52,7 +52,7 @@
   // Scrolling band
   var track = document.getElementById('track');
   var group = '';
-  for(var i = 0; i < 6; i++) group += '<span>AI and robotics</span>';
+  for(var i = 0; i < 6; i++) group += '<span>Web development</span><span>Programming</span><span>Creative projects</span><span>Engineering</span>';
   track.innerHTML = group + group;
 
   // Copy email
