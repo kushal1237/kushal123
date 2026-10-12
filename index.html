@@ -1,117 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kushal Ghimire</title>
-<meta name="description" content="Kushal Ghimire — student, web developer, and technology enthusiast building useful digital projects.">
-<meta name="theme-color" content="#10110f">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b13">
+  <meta name="description" content="Kushal Ghimire — Grade 12 student from Chitwan, Nepal, learning through web projects and electronics.">
+  <title>Kushal Ghimire | Student Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header>
-  <div class="wrap">
-    <a class="brand" href="#home">Kushal Ghimire</a>
-    <nav aria-label="Sections">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills and certificates</a>
-      <a href="#contact">Contact</a>
+  <header class="site-header">
+    <a class="brand" href="#home">Kushal<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#certificate">Certificate</a><a href="#contact">Contact</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main id="main-content">
-  <section id="home">
-    <div class="wrap">
+  <main>
+    <section class="hero wrap" id="home">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> STUDENT · BUILDER · FUTURE ENGINEER</p>
-        <h1 aria-label="Kushal Ghimire"><span class="split">Kushal</span><span class="split">Ghimire</span></h1>
-        <p class="tagline">Student by day. Builder by curiosity. Exploring <span class="word" id="word">web development</span><span class="caret" aria-hidden="true"></span> and turning ideas into useful projects.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <p class="eyebrow">GRADE 12 STUDENT · CHITWAN, NEPAL</p>
+        <h1>Hi, I'm Kushal.<br><span class="white-name">Ghimire</span></h1>
+        <p class="hero-line">I build things, break things, and learn how to make them better.</p>
+        <p class="intro">I'm a student from Chitwan, Nepal, interested in web development, programming, and electronics. One of my projects is a smart kitchen system that detects gas leaks and automatically turns on an exhaust fan. I learn by building, testing, and improving my work.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="#contact">Contact me</a>
+        </div>
+        <div class="quick-contact" aria-label="Contact links">
+          <a href="mailto:kushalghimire1237@gmail.com">Email ↗</a>
+          <a href="tel:+9779823507162">Phone ↗</a>
+          <a href="https://github.com/kushal1237" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
       </div>
-      <div class="frame" id="frame">
-        <img src="photo.webp" alt="Portrait of Kushal Ghimire in a black blazer and white shirt" width="576" height="720">
+      <figure class="portrait">
+        <img src="images/photo.webp" alt="Portrait of Kushal Ghimire" width="576" height="720">
+        <figcaption>Learning by making.</figcaption>
+      </figure>
+    </section>
+
+    <section class="about wrap section" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span>Practical by habit.</span></h2></div>
+      <div class="about-copy">
+        <p>I enjoy working on projects where software and physical components meet. I’m still learning, so I try to keep track of what works, what fails, and what I can improve next.</p>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Chitwan, Nepal</dd></div>
+          <div><dt>Education</dt><dd>Grade 12 (2082)</dd></div>
+          <div><dt>Currently exploring</dt><dd>Web development, programming, electronics</dd></div>
+        </dl>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about">
-    <div class="wrap">
-      <p class="section-kicker">01 / A LITTLE ABOUT ME</p>
-      <h2>Curiosity first.<br><span class="muted-heading">Always learning.</span></h2>
-      <p class="lead">I'm a student from Nawalpur, Nepal, interested in engineering, web development, programming, and creating things people can actually use. I'm learning by building projects and improving a little with every release.</p>
-      <dl class="facts">
-        <div><dt>Location</dt><dd>Nawalpur (Gaindakot-8), Nepal</dd></div>
-        <div><dt>Education</dt><dd>NEB (+2), Vijaya Samudayik Siksha Sadan, 2026</dd></div>
-        <div><dt>Interests</dt><dd>Web development, programming, technology</dd></div>
-      </dl>
-    </div>
-  </section>
+    <section class="section wrap" id="projects">
+      <div class="section-top"><div><p class="eyebrow">BUILT AND TESTED</p><h2>Featured project</h2></div><span class="index">01 / PROJECT</span></div>
+      <article class="project">
+        <a class="project-image" href="images/smart-kitchen.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the original Smart Kitchen project photo">
+          <img src="images/smart-kitchen.jpg" alt="Real photo of the ESP32 Smart Kitchen prototype with wiring and sensor modules">
+          <span class="image-hint">Open photo ↗</span>
+        </a>
+        <div class="project-details">
+          <p class="eyebrow">ESP32 · GAS SENSOR · AUTOMATION</p>
+          <h3>Smart Kitchen — Gas Leak Detector &amp; Auto Fan</h3>
+          <p class="project-lead">A prototype designed to respond when a gas leak is detected.</p>
+          <p>The gas sensor feeds readings to the controller. When a leak is detected, the system is designed to activate an exhaust fan and alert the user. The prototype helped me explore sensors, wiring, control logic, and how hardware can respond to a real-world problem.</p>
+          <div class="tags"><span>ESP32</span><span>Gas sensor</span><span>Relay module</span><span>Fan automation</span><span>IoT</span></div>
+          <p class="note">This is a learning prototype, not a certified safety device. Do not rely on it as a replacement for approved gas detectors.</p>
+        </div>
+      </article>
+      <div class="small-project">
+        <div><p class="eyebrow">ANDROID APP</p><h3>Astraluna</h3><p>Explore my Android app and its project page.</p></div>
+        <a class="text-link" href="https://kushal1237.github.io/astraluna11/" target="_blank" rel="noopener noreferrer">Visit Astraluna ↗</a>
+      </div>
+    </section>
 
-  <section id="projects">
-    <div class="wrap">
-      <p class="section-kicker">02 / THINGS I’VE BEEN BUILDING</p>
-      <h2>Selected <span class="muted-heading">projects.</span></h2>
-      <ul class="rows">
-        <li>
-          <div class="top"><h3>ASTRALUNA</h3><span class="tag">In progress</span></div>
-          <p>A moon and night-sky app designed to make stargazing easier and more fun.</p>
-        </li>
-        <li>
-          <div class="top"><h3>Personal portfolio</h3><span class="tag">Web</span></div>
-          <p>A home for my work, experiments, skills, and progress as a developer.</p>
-        </li>
-        <li>
-          <div class="top"><h3>Chips or Bomb</h3><span class="tag">Game concept</span></div>
-          <p>A two-player online game concept with custom avatars, tokens, and no real-money betting.</p>
-        </li>
-        <li>
-          <div class="top"><h3>Small web experiments</h3><span class="tag">Learning</span></div>
-          <p>Practising HTML, CSS, and JavaScript by making interactive pages and improving their design.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <section class="section wrap certificate-section" id="certificate">
+      <div class="section-top"><div><p class="eyebrow">LEARNING MILESTONE</p><h2>Certificate</h2></div><span class="index">02 / LEARNING</span></div>
+      <article class="certificate">
+        <a class="certificate-image" href="images/certificate.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate at full size">
+          <img src="images/certificate.jpg" alt="Robotics and Coding Program certificate issued by Techsthal Innovations Pvt. Ltd.">
+          <span class="image-hint">View original ↗</span>
+        </a>
+        <div>
+          <p class="eyebrow">TECHSTHAL INNOVATIONS PVT. LTD.</p>
+          <h3>Intermediate Robotics &amp; Coding Program</h3>
+          <p>Completed a one-year program while studying in Grade 12, with hands-on learning in robotics, programming, and problem-solving.</p>
+          <p class="date">Issued July 7, 2026</p>
+        </div>
+      </article>
+    </section>
 
-  <section id="skills">
-    <div class="wrap">
-      <p class="section-kicker">03 / MY TOOLKIT</p>
-      <h2>Skills and <span class="muted-heading">certificates.</span></h2>
-    </div>
-    <div class="band" aria-hidden="true">
-      <div class="track" id="track"></div>
-    </div>
-    <div class="wrap">
-      <p class="note">Currently learning: HTML, CSS, JavaScript, programming fundamentals, and engineering concepts. Certificate: AI and robotics.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
-      <p class="section-kicker">04 / SAY HELLO</p>
-      <h2>Let’s make<br><span class="muted-heading">something useful.</span></h2>
-      <ul class="links">
-        <li><span class="k">Email</span><a class="big" href="mailto:kushalgh667@gmail.com">kushalgh667@gmail.com</a><button class="copy" id="copy" type="button">Copy</button></li>
-        <li><span class="k">Phone</span><a class="big" href="tel:+9779811893906">9811893906</a></li>
-        <li><span class="k">GitHub</span><a class="big" href="https://github.com/kushal1237" rel="noopener">github.com/kushal1237</a></li>
-        <li><span class="k">LinkedIn</span><a class="big" href="https://linkedin.com/in/kushal-ghimire-0948b6265" rel="noopener">linkedin.com/in/kushal-ghimire-0948b6265</a></li>
-      </ul>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>&copy; 2026 Kushal Ghimire</span>
-    <span>Time in Nepal <time id="clock"></time></span>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-inner">
+        <div><p class="eyebrow">GET IN TOUCH</p><h2>Have a project in mind?</h2><p>I’m always glad to connect with people who like building and learning.</p></div>
+        <div class="contact-list">
+          <a href="mailto:kushalghimire1237@gmail.com"><span>Email</span><strong>kushalghimire1237@gmail.com ↗</strong></a>
+          <a href="tel:+9779823507162"><span>Phone</span><strong>+977 9823507162 ↗</strong></a>
+          <a href="https://github.com/kushal1237" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>github.com/kushal1237 ↗</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#home">Kushal<span>.</span></a><p>Made while learning, one project at a time.</p><span>© <span id="year"></span> Kushal Ghimire</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
